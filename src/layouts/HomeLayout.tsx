@@ -2,6 +2,7 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import './HomeLayout.css'
 
 const HomeLayout: React.FC = () => {
   const navigation = [
@@ -13,7 +14,7 @@ const HomeLayout: React.FC = () => {
   return (
     <main className="w-full h-auto min-h-screen">
       <div className="absolute top-0 right-0 left-0 h-screen flex justify-center items-center">
-        <div className=''></div>
+        <div className='blueLight'></div>
       </div>
       <div className="bg-transparent">
         <div className="relative overflow-hidden">
