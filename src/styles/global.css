@@ -6,7 +6,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 body {
-  @apply bg-white;
+  /* @apply bg-white dark:bg-black; */
+  @apply min-h-screen w-full text-white;
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(0, 0, 0)) rgb(0, 0, 0);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 h1,
