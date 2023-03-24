@@ -1,6 +1,6 @@
 const Header: React.FC<{ title: string }> = ({ title }) => {
   return (
-    <header className="px-4 prose pt-5">
+    <header className="px-4 prose pt-5 mx-auto">
       <h2>{title}</h2>
       <nav className="space-x-2">
         <a href="/">Home</a>

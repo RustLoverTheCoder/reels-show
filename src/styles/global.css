@@ -3,7 +3,10 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
-body {}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+body {
+    @apply bg-white;
+}
 
 h1,
 h2,
@@ -35,3 +38,16 @@ pre {}
 pre>code {}
 
 blockquote {}
+
+.prose {
+    @apply max-w-[37.5rem];
+    font-family: 'Inter', sans-serif;
+}
+
+.prose :where(h1):not(:where([class~="not-prose"] *)) {
+  color: var(--tw-prose-headings);
+  font-size: 2em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 2.5rem;
+}
