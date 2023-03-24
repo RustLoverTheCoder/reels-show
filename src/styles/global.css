@@ -41,14 +41,5 @@ pre>code {}
 blockquote {}
 
 .prose {
-  @apply max-w-[37.5rem];
   font-family: 'Inter', sans-serif;
-}
-
-.prose :where(h1):not(:where([class~="not-prose"] *)) {
-  @apply text-[2em] py-[30px] leading-[2.5em] my-[0];
-}
-
-.prose :where(p):not(:where([class~="not-prose"] *)) {
-  @apply text-[1.25em] leading-[2em];
 }
